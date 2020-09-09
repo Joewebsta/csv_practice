@@ -3,9 +3,8 @@ require 'minitest/pride'
 require './lib/animal_lover'
 
 class AnimalLoverTest < Minitest::Test
-
   def setup
-    @hagrid = AnimalLover.new(1,'Rubeus','Hagrid',60)
+    @hagrid = AnimalLover.new(1, 'Rubeus', 'Hagrid', 60)
   end
 
   def test_animal_lover_exisits
@@ -20,7 +19,6 @@ class AnimalLoverTest < Minitest::Test
   end
 
   def test_animal_lover_has_full_name
-    assert_equal "Rubeus Hagrid", @hagrid.full_name
+    assert_equal 'Rubeus Hagrid', @hagrid.full_name
   end
-
 end
